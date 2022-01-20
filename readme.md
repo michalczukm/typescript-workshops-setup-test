@@ -1,9 +1,10 @@
 # TypeScript workshops setup test
 
 If you're reading this, you're probably preparing for TypeScript workshops with me.
-I cannot be more happy about it 😊
 
-Please do below setup check to make sure you have ready environment for workshops.
+I am more than happy about it 😊
+
+⚠️ Please do below setup check to make sure you have environment ready for workshops. In will save us time on firefighting with environment setup on the beginning of our workshops.
 
 ## Prepare your machine
 
