@@ -38,12 +38,32 @@ const Check = () => {
   >(null);
 
   useEffect(() => {
-    try {
-      // this file has to exist, since Parcel statically analyze the code in search for dynamic modules
-      import('./data/node-test-result.json')
-        .then((results) => setTestResults(results))
-        .catch((error) => setTestResults({ error }));
-    } catch {}
+    let tries = 0;
+    const interval = setInterval(async () => {
+      try {
+        // this file has to exist, since Parcel statically analyze the code in search for dynamic modules
+        const results = await import('./data/node-test-result.json');
+        tries++;
+
+        if (Object.keys(results).length > 0) {
+          setResults(results);
+        } else if (tries >= 50) {
+          setResults({
+            error: 'Exceeded number of attempts. Please check your environment',
+          });
+        }
+      } catch (error) {
+        setResults({ error: error as string });
+      }
+    }, 100);
+
+    const clear = () => clearInterval(interval);
+    const setResults = (results: typeof testResults) => {
+      setTestResults(results);
+      clear();
+    };
+
+    return clear;
   }, []);
 
   return (
@@ -56,7 +76,7 @@ const Check = () => {
         {testResults ? (
           <NodeTest results={testResults} />
         ) : (
-          <li>Node.js setup test still running...</li>
+          <li> Node.js setup test is still 🏃 running...</li>
         )}
       </ul>
     </>
