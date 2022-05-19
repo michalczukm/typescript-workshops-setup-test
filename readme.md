@@ -4,14 +4,16 @@ If you're reading this, you're probably preparing for TypeScript workshops with 
 
 I am more than happy about it 😊
 
-⚠️ Please do below setup check to make sure you have environment ready for workshops. In will save us time on firefighting with environment setup on the beginning of our workshops.
+⚠️ Please do below setup check **before workshops** to make sure you have environment ready for workshops.
+
+In will save us time on firefighting with environment setup on the beginning of our workshops 🙇
 
 ## Prepare your machine
 
-You'll gonna need one of currently supported LTS versions of
+You'll gonna need **one of currently supported LTS versions** of
 
-- node.js
-- npm
+- node.js (it should be written on main page of [nodejs.org](https://nodejs.org/en/))
+- npm (if you have node.js LTS, you also should have up to date `npm` version)
 
 If not specified otherwise in preparation docs you should receive before workshops.
 
@@ -35,7 +37,7 @@ Steps
 3. Install dependencies with `npm ci`
 4. Run `npm start`
 
-You should see output similar to the one below
+You should see output similar to the one below (with info about `node.js` setup being legit 🤞)
 
 ```shell
 ➜  typescript-workshops-setup-test git:(main) npm start
