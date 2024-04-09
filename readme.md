@@ -2,6 +2,8 @@
 
 If you're reading this, you're probably preparing for TypeScript workshops with me.
 
+Thats me --> 🧑‍💻 [michalczukm.xyz](https://michalczukm.xyz)
+
 I am more than happy about it 😊
 
 ⚠️ Please do below setup check **before workshops** to make sure you have environment ready for workshops.
@@ -43,11 +45,14 @@ You should see output similar to the one below (with info about `node.js` setup 
 ➜  typescript-workshops-setup-test git:(main) npm start
 
 > typescript-workshops-setup-test@1.0.0 start
-> ts-node node-test.ts && parcel index.html --open
+> tsx node-test.ts && vite serve --open
 
 ✅ Node.js setup looks legit
-Server running at http://localhost:1234
-✨ Built in 49ms
+Re-optimizing dependencies because lockfile has changed
+
+  VITE v5.2.8  ready in 89 ms
+
+  ➜  Local:   http://localhost:5173/
 ```
 
 And your default browser should display page with checks results.

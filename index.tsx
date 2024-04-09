@@ -41,7 +41,6 @@ const Check = () => {
     let tries = 0;
     const interval = setInterval(async () => {
       try {
-        // this file has to exist, since Parcel statically analyze the code in search for dynamic modules
         const results = await import('./data/node-test-result.json');
         tries++;
 
@@ -71,7 +70,7 @@ const Check = () => {
       <ul>
         <li>
           ✅ You have access to npm registries, can install packages and run
-          basic Parcel &amp; React example (you see this, so it works 😉)
+          basic Vite &amp; React example (if see this it works 😉)
         </li>
         {testResults ? (
           <NodeTest results={testResults} />

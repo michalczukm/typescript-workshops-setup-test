@@ -1,6 +1,5 @@
 node_modules/
 dist/
-.parcel-cache/
 .vscode
 .idea
 data/node-test-result.json

@@ -1,6 +1,6 @@
-import { execSync } from 'child_process';
-import path from 'path';
-import { writeFile } from 'fs';
+import { execSync } from 'node:child_process';
+import path from 'node:path';
+import { writeFile } from 'node:fs';
 
 writeFile(
   path.join(__dirname, 'data', 'node-test-result.json'),
