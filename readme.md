@@ -48,14 +48,20 @@ You should see output similar to the one below (with info about `node.js` setup 
 > tsx node-test.ts && vite serve --open
 
 ✅ Node.js setup looks legit
-Re-optimizing dependencies because lockfile has changed
 
-  VITE v5.2.8  ready in 89 ms
+  VITE v5.4.8  ready in 81 ms
 
   ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
 ```
 
 And your default browser should display page with checks results.
 If everything is fine, you should see page as below
+
+> [!IMPORTANT]  
+> Unless specified elsewhere - we won't use very node.js specific features during workshops, so you can use any LTS version of node.js & npm.
+>
+> But - it's good to have it up to date :)
 
 ![passed setup test results](./data/passed-setup-test.png)
