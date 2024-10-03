@@ -2,13 +2,12 @@
 
 If you're reading this, you're probably preparing for TypeScript workshops with me.
 
-Thats me --> 🧑‍💻 [michalczukm.xyz](https://michalczukm.xyz)
+(More about me - 🧑‍💻 [michalczukm.xyz](https://michalczukm.xyz))
 
-I am more than happy about it 😊
-
-⚠️ Please do below setup check **before workshops** to make sure you have environment ready for workshops.
-
-In will save us time on firefighting with environment setup on the beginning of our workshops 🙇
+Great! Now, let's do some preparations 🎉
+> [!WARNING]  
+> Please do the below setup check **before workshops** to make sure you have your environment ready.
+> In will save us time on firefighting with environment setup at the beginning of our workshops 🙇
 
 ## Prepare your machine
 
